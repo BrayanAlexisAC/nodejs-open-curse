@@ -1,0 +1,18 @@
+### test first API
+GET http://localhost:3000
+
+### Get information about Ditto
+GET http://localhost:3000/pokemon/ditto
+
+### Create a Pokemon
+POST http://localhost:3000/pokemon
+Content-Type: application/json
+
+{
+  "name":"ditto",
+  "type":"normal",
+  "moves":[
+    "transform",
+    "splash"
+  ]
+}
