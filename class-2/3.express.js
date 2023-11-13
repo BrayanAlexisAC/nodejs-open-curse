@@ -37,9 +37,9 @@ app.get('/pokemon/ditto', (request,response) => {
 })
 
 app.post('/pokemon', (request, response) => {
-    let data = request.body
-    data.timestamp = Date.now()
-    response.status(201).json(data)
+  const data = request.body
+  data.timestamp = Date.now()
+  response.status(201).json(data)
 })
 
 app.use((request, response)=>{
